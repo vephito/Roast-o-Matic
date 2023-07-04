@@ -1,2 +1,0 @@
-token='5898034429:AAFgvUVTMajHLX_wU2-UmMPwmT9nlc5rdb0'
-openai_key='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'
