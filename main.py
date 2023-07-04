@@ -39,15 +39,12 @@ def fetch_and_display_api(word):
 
 
 async def start_command(update, context):
-    await update.message.reply_text('Hello there! i\'m a bot. Nice to mee you!')
+    await update.message.reply_text('Hello there! i\'m Roast-o-Matic. Nice to mee you!')
 
 
 async def help_command(update, context):
     await update.message.reply_text("Try typing anything and I will response!")
 
-
-async def custom_command(update, context):
-    await update.message.reply_text(f"This is a custom command!")
 
 async def handle_messages(update, context):
     text = update.message.text
@@ -68,7 +65,6 @@ if __name__ == '__main__':
     # Commands
     app.add_handler(CommandHandler('start', start_command))
     app.add_handler(CommandHandler('help', help_command))
-    app.add_handler(CommandHandler('custom', custom_command))
     app.add_handler(MessageHandler(None, handle_messages))
 
 
